@@ -1,5 +1,5 @@
-<SDCSubmissionPackage xmlns="urn:ihe:qrph:sdc:2016" pkgInstanceURI="1223456" pkgInstanceVersionURI="1223456" pkgPreviousInstanceVersionURI="1223456" pkgDateTimeStamp="2023-03-28T13:50:23">
-	<FormDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ColoRectal.Res.126_3.007.021.REL_sdcFDF" baseURI="www.cap.org/eCC" fullURI="_baseURI=www.cap.org/eCC&amp;_lineage=ColoRectal.Res.126&amp;_version=3.007.021.REL&amp;_docType=sdcFDF" formTitle="COLON AND RECTUM: Resection, Including Transanal Disk Excision of Rectal Neoplasms" lineage="ColoRectal.Res.126" filename="ColoRectal.Res.126_3.007.021.REL_sdcFDF.xml" version="3.007.021.REL" formInstanceURI="0de597de-5b23-42e0-94cb-37378fe5ffd3" formInstanceVersionURI="0de597de-5b23-42e0-94cb-37378fe5ffd3/ver1">
+<SDCSubmissionPackage xmlns="urn:ihe:qrph:sdc:2016" pkgInstanceURI="1223456" pkgInstanceVersionURI="1223456" pkgPreviousInstanceVersionURI="1223456" pkgDateTimeStamp="2023-03-29T14:45:04">
+	<FormDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ColoRectal.Res.126_3.007.021.REL_sdcFDF" baseURI="www.cap.org/eCC" fullURI="_baseURI=www.cap.org/eCC&amp;_lineage=ColoRectal.Res.126&amp;_version=3.007.021.REL&amp;_docType=sdcFDF" formTitle="COLON AND RECTUM: Resection, Including Transanal Disk Excision of Rectal Neoplasms" lineage="ColoRectal.Res.126" filename="ColoRectal.Res.126_3.007.021.REL_sdcFDF.xml" version="3.007.021.REL" formInstanceURI="61a86920-cdda-4189-9331-d2efa57ef3fd" formInstanceVersionURI="61a86920-cdda-4189-9331-d2efa57ef3fd/ver1">
 		<Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" order="1" propName="Copyright" val="(c) 2022 College of American Pathologists.  All rights reserved.  License required for use." />
 		<Property name="GenericHeaderText" type="CAPeCC_static_text" order="2" propName="GenericHeaderText" val="Surgical Pathology Cancer Case Summary" />
 		<Property name="Category" type="CAPeCC_meta" order="3" propName="Category" val="Gastrointestinal" />
@@ -24,17 +24,17 @@
 									<ListItem name="LI_1425" order="22" ID="1425.100004300" title="Right hemicolectomy" />
 									<ListItem name="LI_1426" order="23" ID="1426.100004300" title="Transverse colectomy" />
 									<ListItem name="LI_1427" order="24" ID="1427.100004300" title="Left hemicolectomy" />
-									<ListItem name="LI_1428" order="25" ID="1428.100004300" title="Sigmoidectomy" />
+									<ListItem name="LI_1428" order="25" ID="1428.100004300" title="Sigmoidectomy" selected="true" />
 									<ListItem name="LI_1429" order="26" ID="1429.100004300" title="Low anterior resection" />
 									<ListItem name="LI_1430" order="27" ID="1430.100004300" title="Total abdominal colectomy" />
 									<ListItem name="LI_1431" order="28" ID="1431.100004300" title="Abdominoperineal resection" />
 									<ListItem name="LI_1415" order="29" ID="1415.100004300" title="Transanal disk excision (local excision)" />
 									<ListItem name="LI_34083" order="30" ID="34083.100004300" title="Endoscopic mucosal resection" />
-									<ListItem name="LI_1432" order="31" ID="1432.100004300" title="Other (specify)" selected="true">
+									<ListItem name="LI_1432" order="31" ID="1432.100004300" title="Other (specify)">
 										<Property name="p_rptTxt_1432_1" order="32" propName="reportText" val="{no text}" />
 										<ListItemResponseField name="lirf_1432_2" order="33" responseRequired="true">
 											<Response name="rsp_1432_3" order="34">
-												<string name="str_1432_4" order="35" val="Laparoscopic-assisted sigmoid colectomy (procedure)" />
+												<string name="str_1432_4" order="35" />
 											</Response>
 										</ListItemResponseField>
 									</ListItem>
@@ -46,10 +46,10 @@
 							<Property name="p_rptTxt_1457_1" order="38" propName="reportText" val="Macroscopic Evaluation of Mesorectum" />
 							<ListField name="lf_1457_2" order="39">
 								<List name="lst_1457_3" order="40">
-									<ListItem name="LI_41653" order="41" ID="41653.100004300" title="?Not applicable" omitWhenSelected="true">
+									<ListItem name="LI_41653" order="41" ID="41653.100004300" title="?Not applicable" omitWhenSelected="true" selected="true">
 										<Property name="p_rptTxt_41653_1" order="42" propName="reportText" val="Not applicable" />
 									</ListItem>
-									<ListItem name="LI_1459" order="43" ID="1459.100004300" title="Complete" selected="true" />
+									<ListItem name="LI_1459" order="43" ID="1459.100004300" title="Complete" />
 									<ListItem name="LI_1460" order="44" ID="1460.100004300" title="Near complete" />
 									<ListItem name="LI_1461" order="45" ID="1461.100004300" title="Incomplete" />
 									<ListItem name="LI_15380" order="46" ID="15380.100004300" title="Cannot be determined">
@@ -226,7 +226,7 @@
 							<ListField name="lf_38111_2" order="150">
 								<List name="lst_38111_3" order="151">
 									<ListItem name="LI_38053" order="152" ID="38053.100004300" title="G1, well differentiated" />
-									<ListItem name="LI_38054" order="153" ID="38054.100004300" title="G2, moderately differentiated" />
+									<ListItem name="LI_38054" order="153" ID="38054.100004300" title="G2, moderately differentiated" selected="true" />
 									<ListItem name="LI_38055" order="154" ID="38055.100004300" title="G3, poorly differentiated" />
 									<ListItem name="LI_38056" order="155" ID="38056.100004300" title="G4, undifferentiated" />
 									<ListItem name="LI_1485" order="156" ID="1485.100004300" title="Other (specify)">
@@ -244,7 +244,7 @@
 											</Response>
 										</ListItemResponseField>
 									</ListItem>
-									<ListItem name="LI_1481" order="165" ID="1481.100004300" title="Not applicable" selected="true">
+									<ListItem name="LI_1481" order="165" ID="1481.100004300" title="Not applicable">
 										<ListItemResponseField name="lirf_1481_1" order="166">
 											<Response name="rsp_1481_2" order="167">
 												<string name="str_1481_3" order="168" />
@@ -304,7 +304,7 @@
 							<Property name="p_rptTxt_378887_1" order="200" propName="reportText" val="Multiple Primary Sites" />
 							<ListField name="lf_378887_2" order="201">
 								<List name="lst_378887_3" order="202">
-									<ListItem name="LI_378888" order="203" ID="378888.100004300" title="?Not applicable (no additional primary site(s) present)" omitWhenSelected="true">
+									<ListItem name="LI_378888" order="203" ID="378888.100004300" title="?Not applicable (no additional primary site(s) present)" omitWhenSelected="true" selected="true">
 										<Property name="p_rptTxt_378888_1" order="204" propName="reportText" val="Not applicable" />
 									</ListItem>
 									<ListItem name="LI_378885" order="205" ID="378885.100004300" title="Present">
@@ -371,7 +371,7 @@
 						<Question name="Q_545134" order="242" ID="545134.100004300" title="Lymphovascular Invasion">
 							<ListField name="lf_545134_1" order="243" maxSelections="0">
 								<List name="lst_545134_2" order="244">
-									<ListItem name="LI_1545" order="245" ID="1545.100004300" title="Not identified" selectionDeselectsSiblings="true" selected="true" />
+									<ListItem name="LI_1545" order="245" ID="1545.100004300" title="Not identified" selectionDeselectsSiblings="true" />
 									<ListItem name="LI_34228" order="246" ID="34228.100004300" title="Small vessel">
 										<ListItemResponseField name="lirf_34228_1" order="247">
 											<Response name="rsp_34228_2" order="248">
@@ -393,7 +393,7 @@
 											</Response>
 										</ListItemResponseField>
 									</ListItem>
-									<ListItem name="LI_545135" order="258" ID="545135.100004300" title="Present (not otherwise specified)">
+									<ListItem name="LI_545135" order="258" ID="545135.100004300" title="Present (not otherwise specified)" selected="true">
 										<Property name="p_rptTxt_545135_1" order="259" propName="reportText" val="Present" />
 										<ListItemResponseField name="lirf_545135_2" order="260">
 											<Response name="rsp_545135_3" order="261">
@@ -534,7 +534,7 @@
 						<Question name="Q_364711" order="345" ID="364711.100004300" title="Margin Status for Invasive Carcinoma">
 							<ListField name="lf_364711_1" order="346">
 								<List name="lst_364711_2" order="347">
-									<ListItem name="LI_364712" order="348" ID="364712.100004300" title="All margins negative for invasive carcinoma">
+									<ListItem name="LI_364712" order="348" ID="364712.100004300" title="All margins negative for invasive carcinoma" selected="true">
 										<ChildItems name="ch_364712_1" order="349">
 											<Question name="Q_364717" order="350" ID="364717.100004300" title="Closest Margin(s) to Invasive Carcinoma" mustImplement="false" minCard="0">
 												<ListField name="lf_364717_1" order="351" maxSelections="0">
@@ -652,7 +652,7 @@
 														<ListItem name="LI_364752" order="421" ID="364752.100004300" title="?Not applicable (not a rectal tumor)" omitWhenSelected="true">
 															<Property name="p_rptTxt_364752_1" order="422" propName="reportText" val="Not applicable" />
 														</ListItem>
-														<ListItem name="LI_364753" order="423" ID="364753.100004300" title="Distance already reported as closest margin">
+														<ListItem name="LI_364753" order="423" ID="364753.100004300" title="Distance already reported as closest margin" selected="true">
 															<ListItemResponseField name="lirf_364753_1" order="424">
 																<Response name="rsp_364753_2" order="425">
 																	<string name="str_364753_3" order="426" />
@@ -778,7 +778,7 @@
 														<ListItem name="LI_364774" order="503" ID="364774.100004300" title="?Not applicable (not a transanal disc excision)" omitWhenSelected="true">
 															<Property name="p_rptTxt_364774_1" order="504" propName="reportText" val="Not applicable" />
 														</ListItem>
-														<ListItem name="LI_364775" order="505" ID="364775.100004300" title="Distance already reported as closest margin">
+														<ListItem name="LI_364775" order="505" ID="364775.100004300" title="Distance already reported as closest margin" selected="true">
 															<ListItemResponseField name="lirf_364775_1" order="506">
 																<Response name="rsp_364775_2" order="507">
 																	<string name="str_364775_3" order="508" />
@@ -920,7 +920,7 @@
 						<Question name="Q_364784" order="586" ID="364784.100004300" title="Margin Status for Non-Invasive Tumor">
 							<ListField name="lf_364784_1" order="587" maxSelections="0">
 								<List name="lst_364784_2" order="588">
-									<ListItem name="LI_364785" order="589" ID="364785.100004300" title="All margins negative for high-grade dysplasia / intramucosal carcinoma and low-grade dysplasia" selectionDeselectsSiblings="true" />
+									<ListItem name="LI_364785" order="589" ID="364785.100004300" title="All margins negative for high-grade dysplasia / intramucosal carcinoma and low-grade dysplasia" selectionDeselectsSiblings="true" selected="true" />
 									<ListItem name="LI_364786" order="590" ID="364786.100004300" title="High-grade dysplasia / intramucosal carcinoma present at margin">
 										<ChildItems name="ch_364786_1" order="591">
 											<Question name="Q_364795" order="592" ID="364795.100004300" title="Margin(s) Involved by High-Grade Dysplasia / Intramucosal Carcinoma">
@@ -1049,8 +1049,8 @@
 						<Question name="Q_374359" order="661" ID="374359.100004300" title="Regional Lymph Node Status">
 							<ListField name="lf_374359_1" order="662">
 								<List name="lst_374359_2" order="663">
-									<ListItem name="LI_5790" order="664" ID="5790.100004300" title="Not applicable (no regional lymph nodes submitted or found)" selected="true" />
-									<ListItem name="LI_374360" order="665" ID="374360.100004300" title="Regional lymph nodes present">
+									<ListItem name="LI_5790" order="664" ID="5790.100004300" title="Not applicable (no regional lymph nodes submitted or found)" />
+									<ListItem name="LI_374360" order="665" ID="374360.100004300" title="Regional lymph nodes present" selected="true">
 										<Property name="p_rptTxt_374360_1" order="666" propName="reportText" val="{no text}" />
 										<ChildItems name="ch_374360_2" order="667">
 											<Question name="Q_356547" order="668" ID="356547.100004300">
@@ -1058,16 +1058,16 @@
 												<ListField name="lf_356547_2" order="670">
 													<List name="lst_356547_3" order="671">
 														<ListItem name="LI_356543" order="672" ID="356543.100004300" title="All regional lymph nodes negative for tumor" />
-														<ListItem name="LI_356548" order="673" ID="356548.100004300" title="Tumor present in regional lymph node(s)">
+														<ListItem name="LI_356548" order="673" ID="356548.100004300" title="Tumor present in regional lymph node(s)" selected="true">
 															<ChildItems name="ch_356548_1" order="674">
 																<Question name="Q_34186" order="675" ID="34186.100004300" title="Number of Lymph Nodes with Tumor">
 																	<ListField name="lf_34186_1" order="676">
 																		<List name="lst_34186_2" order="677">
-																			<ListItem name="LI_5795" order="678" ID="5795.100004300" title="Exact number (specify)">
+																			<ListItem name="LI_5795" order="678" ID="5795.100004300" title="Exact number (specify)" selected="true">
 																				<Property name="p_rptTxt_5795_1" order="679" propName="reportText" val="{no text}" />
 																				<ListItemResponseField name="lirf_5795_2" order="680" responseRequired="true">
 																					<Response name="rsp_5795_3" order="681">
-																						<integer name="intr_5795_4" order="682" maxInclusive="100" minInclusive="0" />
+																						<integer name="intr_5795_4" order="682" maxInclusive="100" minInclusive="0" val="1" />
 																					</Response>
 																				</ListItemResponseField>
 																			</ListItem>
@@ -1122,11 +1122,11 @@
 											<Question name="Q_34185" order="708" ID="34185.100004300" title="Number of Lymph Nodes Examined">
 												<ListField name="lf_34185_1" order="709">
 													<List name="lst_34185_2" order="710">
-														<ListItem name="LI_5792" order="711" ID="5792.100004300" title="Exact number (specify)">
+														<ListItem name="LI_5792" order="711" ID="5792.100004300" title="Exact number (specify)" selected="true">
 															<Property name="p_rptTxt_5792_1" order="712" propName="reportText" val="{no text}" />
 															<ListItemResponseField name="lirf_5792_2" order="713" responseRequired="true">
 																<Response name="rsp_5792_3" order="714">
-																	<integer name="intr_5792_4" order="715" maxInclusive="100" minInclusive="1" />
+																	<integer name="intr_5792_4" order="715" maxInclusive="100" minInclusive="1" val="1" />
 																</Response>
 															</ListItemResponseField>
 														</ListItem>
@@ -1338,7 +1338,7 @@
 									<DisplayedItem name="DI_46591" order="839" ID="46591.100004300" title="pN1: One to three regional lymph nodes are positive (tumor in lymph nodes measuring greater than or equal to 0.2 mm), or any number of tumor deposits are present and all identifiable lymph nodes are negative">
 										<Property name="p_rptTxt_46591_1" order="840" propName="reportText" val="{no text}" />
 									</DisplayedItem>
-									<ListItem name="LI_37640" order="841" ID="37640.100004300" title="pN1a: One regional lymph node is positive" selected="true">
+									<ListItem name="LI_37640" order="841" ID="37640.100004300" title="pN1a: One regional lymph node is positive">
 										<Property name="p_rptTxt_37640_1" order="842" propName="reportText" val="pN1a" />
 									</ListItem>
 									<ListItem name="LI_37641" order="843" ID="37641.100004300" title="pN1b: Two or three regional lymph nodes are positive">
@@ -1353,7 +1353,7 @@
 									<DisplayedItem name="DI_55290" order="849" ID="55290.100004300" title="pN2: Four or more regional nodes are positive">
 										<Property name="p_rptTxt_55290_1" order="850" propName="reportText" val="{no text}" />
 									</DisplayedItem>
-									<ListItem name="LI_37644" order="851" ID="37644.100004300" title="pN2a: Four to six regional lymph nodes are positive">
+									<ListItem name="LI_37644" order="851" ID="37644.100004300" title="pN2a: Four to six regional lymph nodes are positive" selected="true">
 										<Property name="p_rptTxt_37644_1" order="852" propName="reportText" val="pN2a" />
 									</ListItem>
 									<ListItem name="LI_37645" order="853" ID="37645.100004300" title="pN2b: Seven or more regional lymph nodes are positive">
