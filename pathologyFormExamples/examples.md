@@ -17,8 +17,11 @@ All of these bundles are FHIR R4 bundles which can be used for testing. The tran
 ### MsgBundle_ColorectalBx.json
 Example output of what needs to be sent to the CDC 
 
-### TxBundle_ColorectalBx.json
+### Bundle-TxBundleColorectalBx.json
 Example input bundle for Colorectal Biopsy
 
-### TxBundle_ColorectalRes.json
+### Bundle-TxBundleColorectalRes.json
 Example input bundle for Colorectal Resection 
+
+### Bundle-TxBundleColorectalBK.json
+Example input bundle for Colorectal BMK 

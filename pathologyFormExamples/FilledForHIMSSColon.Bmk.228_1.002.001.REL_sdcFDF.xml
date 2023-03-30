@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
+﻿
+<SDCSubmissionPackage xmlns="urn:ihe:qrph:sdc:2016" pkgInstanceURI="1223459" pkgInstanceVersionURI="1223459" pkgPreviousInstanceVersionURI="1223459" pkgDateTimeStamp="2023-03-28T13:38:29">
 <FormDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="Colon.Bmk.228_1.002.001.REL_sdcFDF" baseURI="www.cap.org/eCC" fullURI="_baseURI=www.cap.org/eCC&amp;_lineage=Colon.Bmk.228&amp;_version=1.002.001.REL&amp;_docType=sdcFDF" formTitle="Colon and Rectum Biomarker Reporting Template" lineage="Colon.Bmk.228" filename="Colon.Bmk.228_1.002.001.REL_sdcFDF.xml" version="1.002.001.REL" xmlns="urn:ihe:qrph:sdc:2016">
  <Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" order="1" propName="Copyright" val="(c) 2021 College of American Pathologists.  All rights reserved.  License required for use." />
  <Property name="GenericHeaderText" type="CAPeCC_static_text" order="2" propName="GenericHeaderText" val="Cancer Biomarker Reporting Template" />
@@ -59,13 +59,13 @@
             </Question>
            </ChildItems>
           </ListItem>
-          <ListItem name="LI_29490" order="46" ID="29490.100004300" title="MSH2">
+          <ListItem name="LI_29490" order="46" ID="29490.100004300" title="MSH2" selected="true">
            <Property name="p_rptTxt_29490_1" order="47" propName="reportText" val="{no text}" />
            <ChildItems name="ch_29490_2" order="48">
             <Question name="Q_30000" order="49" ID="30000.100004300" title="MSH2 Result" mustImplement="false" minCard="0">
              <ListField name="lf_30000_1" order="50">
               <List name="lst_30000_2" order="51">
-               <ListItem name="LI_29491" order="52" ID="29491.100004300" title="Intact nuclear expression" />
+               <ListItem name="LI_29491" order="52" ID="29491.100004300" title="Intact nuclear expression" selected="true"/>
                <ListItem name="LI_29492" order="53" ID="29492.100004300" title="Loss of nuclear expression" />
                <ListItem name="LI_29494" order="54" ID="29494.100004300" title="Cannot be determined (explain)">
                 <Property name="p_rptTxt_29494_1" order="55" propName="reportText" val="Cannot be determined" />
@@ -1550,3 +1550,4 @@
   <Property type="meta" styleClass="copyright" order="974" propName="CopyrightFooter" val="(c) 2021 College of American Pathologists.  All rights reserved.  License required for use." />
  </Footer>
 </FormDesign>
+</SDCSubmissionPackage>
