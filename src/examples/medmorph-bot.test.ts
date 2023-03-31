@@ -1,6 +1,7 @@
 import { MockClient } from '@medplum/mock';
 import { expect, test } from 'vitest';
 import { handler } from './medmorph-bot';
+import { env } from 'process';
 
 const contentType = 'application/fhir+json';
 // npm t src/examples/medmorph-bot.test.ts
@@ -68,6 +69,15 @@ test('Success', async () => {
     ],
   });
 
-  const result = await handler(medplum, { input, contentType, secrets: {} });
+  const cdc_secrets = {
+    CDC_BASE_URL: { valueString: env.CDC_BASE_URL },
+    CDC_CLIENT_SECRET: { valueString: env.CDC_CLIENT_SECRET },
+  };
+
+  const result = await handler(medplum, {
+    input,
+    contentType,
+    secrets: cdc_secrets,
+  });
   expect(result).toBe(true);
 });
