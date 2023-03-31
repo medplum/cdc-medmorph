@@ -14,8 +14,34 @@ This file is an example of a colorectal biomarker electronic cancer protocol fro
 ## FHIR Bundles
 All of these bundles are FHIR R4 bundles which can be used for testing. The transaction bundles are meant to be passed to the MedPlum bot and the Message bundles are example output
 
+## Message Bundle Structure 
+```
+Bundle
+├──Message Header
+|   ├──Collection Bundle
+|   |  ├──Patient
+|   |  ├──Practitioner
+|   |  ├──PractitionerRole
+|   |  ├──DiagnosticReport
+|   |  ├──Obs1
+|   |  ├──Obs2
+|   |  ├──Obs*
+```
+
 ### MsgBundle_ColorectalBx.json
 Example output of what needs to be sent to the CDC 
+
+## Transaction Bundle Structure
+Bundle
+├──Transaction Bundle
+|  ├──Patient
+|   |  ├──Practitioner
+|   |  ├──PractitionerRole
+|   |  ├──DiagnosticReport
+|   |  ├──Obs1
+|   |  ├──Obs2
+|   |  ├──Obs*
+```
 
 ### Bundle-TxBundleColorectalBx.json
 Example input bundle for Colorectal Biopsy
