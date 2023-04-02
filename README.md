@@ -2,7 +2,45 @@
 
 This repository shows reference material related to CDC Electronic Case Reporting (eCR) for cancer registry. The reference material uses [Medplum Bots](https://www.medplum.com/docs/bots/bot-basics) to synchronize the FHIR resource bundles to the registry.
 
-## Setup
+## Background and Dataflow
+
+At a high level this integration takes a FHIR Transaction Bundle or FHIR DiagnosticReport resource from an EHR, like Endosoft, and produces a FHIR Message bundle and synchronizes it to the CDC FHIR server.
+
+The workflow corresponds to the Cancer Reporting FHIR [Implementation Guide](https://build.fhir.org/ig/HL7/cancer-reporting/Bundle-us-pathology-reporting-bundle-example.html).
+
+## Importing eCR Bundles
+
+Sample bundles are available in this repository.
+
+## Sending Data to the Registry
+
+TODO: Provide instructions on how to request credentials to CDC FHIR server.
+
+## Message Bundle Structure
+
+Bundle
+├──Message Header
+| ├──Collection Bundle
+| | ├──Patient
+| | ├──Practitioner
+| | ├──PractitionerRole
+| | ├──DiagnosticReport
+| | ├──Obs1
+| | ├──Obs2
+| | ├──Obs\*
+
+## Transaction Bundle Structure
+
+├──Transaction Bundle
+| ├──Patient
+| | ├──Practitioner
+| | ├──PractitionerRole
+| | ├──DiagnosticReport
+| | ├──Obs1
+| | ├──Obs2
+| | ├──Obs\*
+
+## Medplum Setup
 
 To set up your bot deployment you will need to do the following:
 
@@ -64,10 +102,6 @@ Deploy result: All OK
 Once your bot is in place, you'll want to set up a subscription so that each new FHIR Bundle that is created gets validated and sent to the correct system. Create a [Subscription](https://app.medplum.com/Subscription/new) in the Medplum app and name it `medmorph-bundle`.
 
 TODO: Complete this section
-
-## Importing Bundles
-
-## Sending Data to the Registry
 
 ## Related Reading
 
