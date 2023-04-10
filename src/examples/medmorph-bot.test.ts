@@ -3,10 +3,12 @@ import { expect, test } from 'vitest';
 import { handler } from './medmorph-bot';
 import { env } from 'process';
 import { getDisplayString, getReferenceString } from '@medplum/core';
+import * as dotenv from 'dotenv'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 
 const contentType = 'application/fhir+json';
 // npm t src/examples/medmorph-bot.test.ts
 test('Success', async () => {
+  dotenv.config();
   const medplum = new MockClient();
   const cbcObservation = await medplum.createResource({
     resourceType: 'Observation',
