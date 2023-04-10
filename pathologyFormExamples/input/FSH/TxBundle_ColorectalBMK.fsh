@@ -14,6 +14,26 @@ Usage: #example
 * entry[=].resource = LauraPractitionerRole
 * entry[=].request.method = #POST
 * entry[=].request.url = "PractitionerRole"
+* entry[+].fullUrl = "urn:uuid:f35c3dd6-e35b-4b57-a08a-2542d8b45786"
+* entry[=].resource = AbrahamPractitioner
+* entry[=].request.method = #POST
+* entry[=].request.url = "Practitioner"
+* entry[+].fullUrl = "urn:uuid:4debcd24-a16f-4af5-8637-b22b0d18f520"
+* entry[=].resource = AbrahamPractitionerRole
+* entry[=].request.method = #POST
+* entry[=].request.url = "PractitionerRole"
+* entry[+].fullUrl = "urn:uuid:a040926d-c7e0-4c54-88e3-5fa42c9d7c56"
+* entry[=].resource = EndoSoftPathologyLab
+* entry[=].request.method = #POST
+* entry[=].request.url = "Organization"
+* entry[+].fullUrl = "urn:uuid:53a31a70-8265-48d2-99f8-e24bab22b038"
+* entry[=].resource = GastroenterologistCenterOrganization
+* entry[=].request.method = #POST
+* entry[=].request.url = "Organization"
+* entry[+].fullUrl = "urn:uuid:e9124809-3712-4386-b3ff-7270a2f9bc83"
+* entry[=].resource = ColorectalServiceRequest
+* entry[=].request.method = #POST
+* entry[=].request.url = "ServiceRequest"
 * entry[+].fullUrl = "urn:uuid:5debc920-1847-4a56-939c-fd77c87c257a"
 * entry[=].resource = ColorectalBMKDiagnosticReport
 * entry[=].request.method = #POST
@@ -26,37 +46,6 @@ Usage: #example
 * entry[=].resource = Observation29484
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
-
-Instance: RosaPatient
-InstanceOf: Patient
-Usage: #inline
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-* identifier.system = "urn:NPI"
-* identifier.value = "1234567893"
-* name.family = "Gonzalez"
-* name.given = "Rosa"
-* gender = #male
-
-Instance: LauraPractitioner
-InstanceOf: Practitioner
-Usage: #inline
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
-* identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[=].value = "1245319599"
-* identifier[+].system = "http://someIdentifier.com"
-* identifier[=].value = "1245319599"
-* name.family = "Turtzo Sample"
-* name.given = "Laura"
-
-Instance: LauraPractitionerRole
-InstanceOf: PractitionerRole
-Usage: #inline
-* meta.profile = "hhttp://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"
-* identifier[0].system = "http://someIdentifier.com"
-* identifier[=].value = "pathpract1"
-* identifier[+].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[=].value = "193757595"
-* code = http://hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types#principal-result-interpreter "Pathologist principally interpreting results on pathology testing"
 
 Instance: ColorectalBMKDiagnosticReport
 InstanceOf: DiagnosticReport
@@ -104,3 +93,4 @@ Usage: #inline
 * performer.type = "Practitioner"
 * hasMember[0].identifier.system = "https://cap.org/eCC"
 * hasMember[=].identifier.value = "urn:uuid:8874ca46-7306-4ea0-af4f-184ee2360882"
+

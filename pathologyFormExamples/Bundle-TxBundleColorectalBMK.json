@@ -13,10 +13,42 @@
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           ]
         },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "White"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2135-2",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Hispanic or Latino"
+                }
+              },
+              {
+                "url": "detailed"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          }
+        ],
         "identifier": [
           {
-            "system": "urn:NPI",
-            "value": "1234567893"
+            "system": "urn:MRN",
+            "value": "1EKG4-TEST-RG56"
+
           }
         ],
         "name": [
@@ -27,7 +59,27 @@
             ]
           }
         ],
-        "gender": "male"
+        "gender": "female",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "612-364-1723",
+            "use": "home"
+          }
+        ],
+        "birthDate": "1967-01-15",
+        "address": [
+          {
+            "line": [
+              "700 W Fullerton Ave, Unit 103"
+            ],
+            "city": "Minneapolis",
+            "state": "MN",
+            "postalCode": "55480",
+            "country": "US"
+          }
+        ]
+
       },
       "request": {
         "method": "POST",
@@ -51,7 +103,7 @@
           },
           {
             "system": "http://someIdentifier.com",
-            "value": "1245319599"
+            "value": "pathpract1"
           }
         ],
         "name": [
@@ -61,6 +113,24 @@
               "Laura"
             ]
           }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "952-777-3333"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "621 Science Drive, ST."
+            ],
+            "city": "ST. LOUIS PARK",
+            "state": "MN",
+            "postalCode": "55425",
+            "country": "US"
+          }
+
         ]
       },
       "request": {
@@ -85,7 +155,7 @@
           },
           {
             "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "193757595"
+            "value": "1245319599"
           }
         ],
         "code": [
@@ -103,6 +173,249 @@
       "request": {
         "method": "POST",
         "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f35c3dd6-e35b-4b57-a08a-2542d8b45786",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "AbrahamPractitioner",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1871569939"
+          },
+          {
+            "system": "http://someIdentifier.com",
+            "value": "oncpract1"
+          }
+        ],
+        "name": [
+          {
+            "family": "Atlas",
+            "given": [
+              "Abraham"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "952-883-6789"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4debcd24-a16f-4af5-8637-b22b0d18f520",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "AbrahamPractitionerRole",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1871569939"
+          }
+        ],
+        "practitioner": {
+          "reference": "Practitioner/1871569939"
+        },
+        "organization": {
+          "reference": "Organization/1194881234"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "OP",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                "display": "Ordering Provider"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "720-242-5555"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a040926d-c7e0-4c54-88e3-5fa42c9d7c56",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "EndoSoftPathologyLab",
+        "meta": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString": "EndoSoft Pathology Lab"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown": "This is the EndoSoft Pathology Lab for the HIMSS 2023 Treating the Whole Person Showcase."
+            }
+          ],
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.4.7",
+            "value": "12D3456789"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "EndoSoft Pathology Lab",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "952-777-3333"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "621 Science Drive, ST."
+            ],
+            "city": "ST. LOUIS PARK",
+            "state": "MN",
+            "postalCode": "55425",
+            "country": "USA"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:53a31a70-8265-48d2-99f8-e24bab22b038",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "GastroenterologistCenterOrganization",
+        "meta": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString": "GastroenterologistCenter"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown": "This is the Gastroenterologist Center for the HIMSS 2023 Treating the Whole Person Showcase."
+            }
+          ],
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1194881234"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Gastroenterologist Center",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "952-883-1212"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "3000 32nd AVE"
+            ],
+            "city": "Minneapolis",
+            "state": "MN",
+            "postalCode": "55425",
+            "country": "USA"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9124809-3712-4386-b3ff-7270a2f9bc83",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "ColorectalServiceRequest",
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "386053000",
+                "system": "http://snomed.info/sct",
+                "display": "Evaluation procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "50322008",
+              "system": "http://snomed.info/sct",
+              "display": "Surgical pathology specimen, clerical procedure including coding of diagnoses"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1EKG4-TEST-RG56"
+        },
+        "requester": {
+          "reference": "Practitioner/1871569939"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
       }
     },
     {
