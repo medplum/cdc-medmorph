@@ -8,6 +8,7 @@
       "resource": {
         "resourceType": "Patient",
         "id": "RosaPatient",
+
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -89,6 +90,7 @@
       "resource": {
         "resourceType": "Practitioner",
         "id": "LauraPractitioner",
+
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
@@ -140,6 +142,7 @@
       "resource": {
         "resourceType": "PractitionerRole",
         "id": "LauraPractitionerRole",
+
         "meta": {
           "profile": [
             "hhttp://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"

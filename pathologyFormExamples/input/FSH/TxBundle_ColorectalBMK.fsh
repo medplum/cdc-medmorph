@@ -79,3 +79,18 @@ Usage: #inline
 * performer.type = "Practitioner"
 * valueCodeableConcept.coding[0] = https://cap.org/eCC#29491.100004300 "Intact nuclear expression"
 * valueCodeableConcept.coding[+] = http://snomed.info/sct#11163003 "Intact (qualifier value)"
+
+Instance: Observation29484
+InstanceOf: Observation
+Usage: #inline
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:b8fa882f-4ed6-4c2e-bd85-690bdedee29c"
+* status = #final
+* code = https://cap.org/eCC#29484.100004300 "RESULTS"
+* subject = Reference(Patient/1234567893) "Rosa Gonzalez"
+* effectivePeriod.start = "2023-03-29T19:06:39+00:00"
+* performer = Reference(Practitioner/1245319599) "L. Turtzo Sample"
+* performer.type = "Practitioner"
+* hasMember[0].identifier.system = "https://cap.org/eCC"
+* hasMember[=].identifier.value = "urn:uuid:8874ca46-7306-4ea0-af4f-184ee2360882"
+
