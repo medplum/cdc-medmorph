@@ -70,7 +70,7 @@
           ]
         }
       },
-      "fullUrl": "f9436646-8f3d-47dd-a489-cdf5fbaa8cd7"
+      "fullUrl": "urn:uuid:f9436646-8f3d-47dd-a489-cdf5fbaa8cd7"
     },
     {
       "resource": {
@@ -1096,7 +1096,7 @@
             }
           },
           {
-            "fullUrl": "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899",
+            "fullUrl": "urn:uuid:6cd86938-e9e8-4629-9e71-deb615d3086e",
             "resource": {
               "resourceType": "DiagnosticReport",
               "id": "DiagnosticReportColorectalBx",

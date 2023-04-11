@@ -34,8 +34,7 @@ Usage: #example
 * entry[=].resource = ColorectalServiceRequest
 * entry[=].request.method = #POST
 * entry[=].request.url = "ServiceRequest"
-* entry[+].fullUrl = "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899"
-* entry[+].fullUrl = "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899"
+* entry[+].fullUrl = "urn:uuid:6cd86938-e9e8-4629-9e71-deb615d3086e"
 * entry[=].resource = DiagnosticReportColorectalBx
 * entry[=].request.method = #POST
 * entry[=].request.url = "DiagnosticReport"

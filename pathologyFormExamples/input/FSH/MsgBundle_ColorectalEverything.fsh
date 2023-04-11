@@ -7,7 +7,7 @@ Usage: #example
 * link.relation = "self"
 * link.url = "http://20.84.81.240:8080/r4/fhir/Bundle"
 * entry[0].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-1
-* entry[=].fullUrl = "f9436646-8f3d-47dd-a489-cdf5fbaa8cd7"
+* entry[=].fullUrl = "urn:uuid:f9436646-8f3d-47dd-a489-cdf5fbaa8cd7"
 * entry[+].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-2
 * entry[=].fullUrl = "urn:uuid:89bc6b79-6acc-4730-ab5f-38bbebb2639d"
 * entry[+].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-3
@@ -115,7 +115,7 @@ Usage: #inline
 * entry[=].resource = ColorectalServiceRequest
 * entry[=].request.method = #POST
 * entry[=].request.url = "ServiceRequest"
-* entry[+].fullUrl = "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899"
+* entry[+].fullUrl = "urn:uuid:6cd86938-e9e8-4629-9e71-deb615d3086e"
 * entry[=].resource = DiagnosticReportColorectalBx
 * entry[=].request.method = #POST
 * entry[=].request.url = "DiagnosticReport"
