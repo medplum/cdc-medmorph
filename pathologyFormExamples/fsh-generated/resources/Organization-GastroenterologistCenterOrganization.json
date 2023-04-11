@@ -1,0 +1,55 @@
+{
+  "resourceType": "Organization",
+  "id": "GastroenterologistCenterOrganization",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "GastroenterologistCenter"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is the Gastroenterologist Center for the HIMSS 2023 Treating the Whole Person Showcase."
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1194881234"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "prov",
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "display": "Healthcare Provider"
+        }
+      ]
+    }
+  ],
+  "name": "Gastroenterologist Center",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "952-883-1212"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "3000 32nd AVE"
+      ],
+      "city": "Minneapolis",
+      "state": "MN",
+      "postalCode": "55425",
+      "country": "USA"
+    }
+  ]
+}
