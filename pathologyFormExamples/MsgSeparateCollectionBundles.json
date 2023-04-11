@@ -669,6 +669,7 @@
             }
         }, 
         {
+            "fullUrl": "urn:uuid:8a75a259-7c2b-4ebf-9c8c-3d2a80d7eb00",
             "resource": {
                 "resourceType": "Bundle",
                 "meta": {
@@ -1094,7 +1095,7 @@
                         "fullUrl": "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899",
                         "resource": {
                             "resourceType": "DiagnosticReport",
-                            "id": "Inline-Instance-for-undefined-4",
+                            "id": "DiagnosticReportColorectalBx",
                             "meta": {
                                 "profile": [
                                     "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"
@@ -1225,10 +1226,10 @@
                         }
                     },
                     {
-                        "fullUrl": "urn:uuid:cea6b3a6-5193-4a1d-8a69-81ec71f7769b",
+                        "fullUrl": "urn:uuid:26bc2877-dc39-44e4-87ed-713a9f706a13",
                         "resource": {
                             "resourceType": "Observation",
-                            "id": "Inline-Instance-for-undefined-5",
+                            "id": "ObsTumorSite",
                             "identifier": [
                                 {
                                     "system": "https://cap.org/eCC",
@@ -1310,6 +1311,595 @@
                             "url": "Observation"
                         }
                     },
+                    {
+                        "fullUrl": "urn:uuid:f93942bf-dd37-4a84-a21c-69a80fb6d953",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsHistologicType",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:f93942bf-dd37-4a84-a21c-69a80fb6d953"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "50757.100004300",
+                                        "display": "Histologic Type"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "798721000004104",
+                                        "display": "Histologic type of primary malignant neoplasm of colon (observable entity)"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "2059.100004300",
+                                        "display": "Mucinous adenocarcinoma"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "72495009",
+                                        "display": "Mucinous adenocarcinoma (morphologic abnormality)"
+                                    }
+                                ]
+                            },
+                            "derivedFrom": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213"
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:2be6eee2-b66b-43e2-9f5f-39274609e78f",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsHistologicGrade",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:2be6eee2-b66b-43e2-9f5f-39274609e78f"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "35916.100004300",
+                                        "display": "Histologic Grade"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "1870001000004104",
+                                        "display": "Histologic grade of primary malignant neoplasm of colon (observable entity)"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "45634.100004300",
+                                        "display": "Not applicable"
+                                    }
+                                ]
+                            },
+                            "derivedFrom": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213"
+                                    }
+                                }
+                            ],
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "https://cap.org/eCC",
+                                                "code": "45634.100004300",
+                                                "display": "Not applicable"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:b13eefac-4fd2-4266-a10a-a7f135fd9199",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsLymphovascularInvasion",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:b13eefac-4fd2-4266-a10a-a7f135fd9199"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "545132.100004300",
+                                        "display": "Lymphovascular Invasion"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "2099.100004300",
+                                        "display": "Cannot be determined"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "1156316003",
+                                        "display": "Cannot be determined (qualifier value)"
+                                    }
+                                ]
+                            },
+                            "derivedFrom": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213"
+                                    }
+                                }
+                            ],
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "https://cap.org/eCC",
+                                                "code": "2099.100004300",
+                                                "display": "Cannot be determined"
+                                            },
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "1156316003",
+                                                "display": "Cannot be determined (qualifier value)"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:bddfee62-d62b-4cf7-9454-2eade8317bc6",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsMargin",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:bddfee62-d62b-4cf7-9454-2eade8317bc6"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "366573.100004300",
+                                        "display": "Margin Status for Invasive Carcinoma"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "366578.100004300",
+                                        "display": "Not applicable"
+                                    }
+                                ]
+                            },
+                            "derivedFrom": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:71bda083-63b2-4418-ba5e-7bf529295848"
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:47630420-7ad7-4300-9386-ab3d4f31231f",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsMarginStatus",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:47630420-7ad7-4300-9386-ab3d4f31231f"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "366600.100004300",
+                                        "display": "Margin Status for Non-Invasive Tumor"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "366605.100004300",
+                                        "display": "Not applicable"
+                                    }
+                                ]
+                            },
+                            "derivedFrom": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:71bda083-63b2-4418-ba5e-7bf529295848"
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsTumorSection",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "16020.100004300",
+                                        "display": "TUMOR"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "hasMember": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:26bc2877-dc39-44e4-87ed-713a9f706a13"
+                                    }
+                                },
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:f93942bf-dd37-4a84-a21c-69a80fb6d953"
+                                    }
+                                },
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:2be6eee2-b66b-43e2-9f5f-39274609e78f"
+                                    }
+                                },
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:b13eefac-4fd2-4266-a10a-a7f135fd9199"
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:71bda083-63b2-4418-ba5e-7bf529295848",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsMarginSection",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:71bda083-63b2-4418-ba5e-7bf529295848"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "366572.100004300",
+                                        "display": "MARGINS"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ],
+                            "hasMember": [
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:bddfee62-d62b-4cf7-9454-2eade8317bc6"
+                                    }
+                                },
+                                {
+                                    "identifier": {
+                                        "system": "https://cap.org/eCC",
+                                        "value": "urn:uuid:47630420-7ad7-4300-9386-ab3d4f31231f"
+                                    }
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:b596b7be-b5b8-4c41-9c7f-5f01ec0d195f",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsSpecimenSection",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:b596b7be-b5b8-4c41-9c7f-5f01ec0d195f"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "2112.100004300",
+                                        "display": "SPECIMEN"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:e1a926f1-3a61-4644-a340-7f04c8fa6390",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsAdditionalFinding",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:e1a926f1-3a61-4644-a340-7f04c8fa6390"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "16022.100004300",
+                                        "display": "ADDITIONAL FINDINGS"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:2de27217-d3de-4f1b-8303-5fb493c49216",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ObsSpecialStudies",
+                            "identifier": [
+                                {
+                                    "system": "https://cap.org/eCC",
+                                    "value": "urn:uuid:2de27217-d3de-4f1b-8303-5fb493c49216"
+                                }
+                            ],
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://cap.org/eCC",
+                                        "code": "17823.100004300",
+                                        "display": "SPECIAL STUDIES (Note H)"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "Patient/1234567893",
+                                "display": "Rosa Gonzalez"
+                            },
+                            "effectivePeriod": {
+                                "start": "2023-03-28T19:19:09+00:00"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/1245319599",
+                                    "type": "Practitioner",
+                                    "display": "L. Turtzo Sample"
+                                }
+                            ]
+                        },
+                        "request": {
+                            "method": "POST",
+                            "url": "Observation"
+                        }
+                    }
+                ]
+            }
+        },
                     {
                         "fullUrl": "urn:uuid:06d75641-9fe0-4638-bd9b-d85d7662fc57",
                         "resource": {
