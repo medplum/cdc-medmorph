@@ -416,10 +416,13 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899"
+    },
+    {
       "fullUrl": "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "Inline-Instance-for-undefined-4",
+        "id": "DiagnosticReportColorectalBx",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"
@@ -550,10 +553,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:cea6b3a6-5193-4a1d-8a69-81ec71f7769b",
+      "fullUrl": "urn:uuid:26bc2877-dc39-44e4-87ed-713a9f706a13",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-5",
+        "id": "ObsTumorSite",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -636,10 +639,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:06d75641-9fe0-4638-bd9b-d85d7662fc57",
+      "fullUrl": "urn:uuid:f93942bf-dd37-4a84-a21c-69a80fb6d953",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-6",
+        "id": "ObsHistologicType",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -704,10 +707,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:16c164ff-be56-487f-9df8-524360d3cf64",
+      "fullUrl": "urn:uuid:2be6eee2-b66b-43e2-9f5f-39274609e78f",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-7",
+        "id": "ObsHistologicGrade",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -746,14 +749,9 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "38054.100004300",
+              "code": "45634.100004300",
               "system": "https://cap.org/eCC",
-              "display": "G2, moderately differentiated"
-            },
-            {
-              "code": "1155703007",
-              "system": "http://snomed.info/sct",
-              "display": "G2: Moderately differentiated histologic grade (qualifier value)"
+              "display": "Not applicable"
             }
           ]
         },
@@ -764,6 +762,19 @@
               "value": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213"
             }
           }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "45634.100004300",
+                  "system": "https://cap.org/eCC",
+                  "display": "Not applicable"
+                }
+              ]
+            }
+          }
         ]
       },
       "request": {
@@ -772,10 +783,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d036a037-3feb-495d-bdba-aa62b62adfab",
+      "fullUrl": "urn:uuid:b13eefac-4fd2-4266-a10a-a7f135fd9199",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-8",
+        "id": "ObsLymphovascularInvasion",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -786,14 +797,9 @@
         "code": {
           "coding": [
             {
-              "code": "545134.100004300",
+              "code": "545132.100004300",
               "system": "https://cap.org/eCC",
               "display": "Lymphovascular Invasion"
-            },
-            {
-              "code": "1268302004",
-              "system": "http://snomed.info/sct",
-              "display": "Lymphovascular Invasion "
             }
           ]
         },
@@ -814,14 +820,14 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "545135.100004300",
+              "code": "2099.100004300",
               "system": "https://cap.org/eCC",
-              "display": "Present"
+              "display": "Cannot be determined"
             },
             {
-              "code": "52101004",
+              "code": "1156316003",
               "system": "http://snomed.info/sct",
-              "display": "Present (qualifier value)"
+              "display": "Cannot be determined (qualifier value)"
             }
           ]
         },
@@ -832,6 +838,24 @@
               "value": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213"
             }
           }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "2099.100004300",
+                  "system": "https://cap.org/eCC",
+                  "display": "Cannot be determined"
+                },
+                {
+                  "code": "1156316003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Cannot be determined (qualifier value)"
+                }
+              ]
+            }
+          }
         ]
       },
       "request": {
@@ -840,10 +864,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d486eec1-6492-412f-ab55-5506d4ac778f",
+      "fullUrl": "urn:uuid:bddfee62-d62b-4cf7-9454-2eade8317bc6",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-9",
+        "id": "ObsMargin",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -877,14 +901,9 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "364712.100004300",
+              "code": "366578.100004300",
               "system": "https://cap.org/eCC",
-              "display": "All margins negative for invasive carcinoma"
-            },
-            {
-              "code": "55182004",
-              "system": "http://snomed.info/sct",
-              "display": "Surgical margin uninvolved by tumor (finding)"
+              "display": "Not applicable"
             }
           ]
         },
@@ -903,10 +922,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:b2440a16-9e92-4f76-8c0b-f12d9828439d",
+      "fullUrl": "urn:uuid:47630420-7ad7-4300-9386-ab3d4f31231f",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-10",
+        "id": "ObsMarginStatus",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -917,7 +936,7 @@
         "code": {
           "coding": [
             {
-              "code": "364784.100004300",
+              "code": "366600.100004300",
               "system": "https://cap.org/eCC",
               "display": "Margin Status for Non-Invasive Tumor"
             }
@@ -940,7 +959,7 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "364785.100004300",
+              "code": "366605.100004300",
               "system": "https://cap.org/eCC",
               "display": "Not applicable"
             }
@@ -961,10 +980,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:89f26fa6-fa14-4a5e-8678-8b55e29ab8fb",
+      "fullUrl": "urn:uuid:f9750b1c-3a55-4a2b-8ec2-d311aaddb213",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-11",
+        "id": "ObsTumorSection",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -1028,10 +1047,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:f99e8b57-9879-4b1b-bf67-55902c61624f",
+      "fullUrl": "urn:uuid:71bda083-63b2-4418-ba5e-7bf529295848",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-12",
+        "id": "ObsMarginSection",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -1083,10 +1102,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:b4e1cfed-eb3f-4f2a-940c-f8e158edc86d",
+      "fullUrl": "urn:uuid:b596b7be-b5b8-4c41-9c7f-5f01ec0d195f",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-13",
+        "id": "ObsSpecimenSection",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -1124,10 +1143,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3207df95-d947-4306-a3ed-83d1dacd85f0",
+      "fullUrl": "urn:uuid:e1a926f1-3a61-4644-a340-7f04c8fa6390",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-14",
+        "id": "ObsAdditionalFinding",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -1165,10 +1184,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9d976651-e86d-4518-b4ce-065fa2d37ec2",
+      "fullUrl": "urn:uuid:2de27217-d3de-4f1b-8303-5fb493c49216",
       "resource": {
         "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-15",
+        "id": "ObsSpecialStudies",
         "identifier": [
           {
             "system": "https://cap.org/eCC",
@@ -1182,47 +1201,6 @@
               "code": "17823.100004300",
               "system": "https://cap.org/eCC",
               "display": "SPECIAL STUDIES (Note H)"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/1234567893",
-          "display": "Rosa Gonzalez"
-        },
-        "effectivePeriod": {
-          "start": "2023-03-28T19:19:09+00:00"
-        },
-        "performer": [
-          {
-            "reference": "Practitioner/1245319599",
-            "display": "L. Turtzo Sample",
-            "type": "Practitioner"
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:0af6035a-6991-4b24-8681-84852951050a",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Inline-Instance-for-undefined-16",
-        "identifier": [
-          {
-            "system": "https://cap.org/eCC",
-            "value": "urn:uuid:9063284d-7e0f-4404-90d4-02e037b3a73c"
-          }
-        ],
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "code": "381075.100004300",
-              "system": "https://cap.org/eCC",
-              "display": "COMMENTS"
             }
           ]
         },

@@ -35,7 +35,7 @@ Usage: #example
 * entry[=].request.method = #POST
 * entry[=].request.url = "ServiceRequest"
 * entry[+].fullUrl = "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899"
-* entry[=].resource = Inline-Instance-for-undefined-4
+* entry[=].resource = DiagnosticReportColorectalBx
 * entry[=].request.method = #POST
 * entry[=].request.url = "DiagnosticReport"
 * entry[+].fullUrl = "urn:uuid:26bc2877-dc39-44e4-87ed-713a9f706a13"

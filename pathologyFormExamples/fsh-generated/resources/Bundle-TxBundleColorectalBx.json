@@ -419,7 +419,7 @@
       "fullUrl": "urn:uuid:38f41ce0-21bb-4650-a695-d3572585e899",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "Inline-Instance-for-undefined-4",
+        "id": "DiagnosticReportColorectalBx",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"
