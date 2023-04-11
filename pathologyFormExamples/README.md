@@ -7,6 +7,9 @@ This markdown file explains what each example in this folder is. There are two c
    a. Transaction Bundles produced by EHRs
    b. Message Bundle samples designed for transmission to the CDC FHIR Server
 
+## FHIR ShortHand
+the examples generated are created using [FHIR Short Hand](https://fshschool.org/) and can be regenerating using [sushi](https://fshschool.org/docs/sushi/installation/) the generated bundles can be found in the fsh-generated folder. The fsh files can be found in input/fsh.
+
 ## CAP electronic Cancer Protocols
 
 The following are examples of [CAP Protocols](https://www.cap.org/protocols-and-guidelines/electronic-cancer-protocols). The output of the protocols is [IG](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/)
