@@ -540,7 +540,53 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:394ac7aa-4992-481f-abea-604d1aa24df0"
+      "fullUrl": "urn:uuid:394ac7aa-4992-481f-abea-604d1aa24df0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation29484",
+        "identifier": [
+          {
+            "system": "https://cap.org/eCC",
+            "value": "urn:uuid:b8fa882f-4ed6-4c2e-bd85-690bdedee29c"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "29484.100004300",
+              "system": "https://cap.org/eCC",
+              "display": "RESULTS"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1234567893",
+          "display": "Rosa Gonzalez"
+        },
+        "effectivePeriod": {
+          "start": "2023-03-29T19:06:39+00:00"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/1245319599",
+            "display": "L. Turtzo Sample",
+            "type": "Practitioner"
+          }
+        ],
+        "hasMember": [
+          {
+            "identifier": {
+              "system": "https://cap.org/eCC",
+              "value": "urn:uuid:8874ca46-7306-4ea0-af4f-184ee2360882"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     }
   ]
 }
