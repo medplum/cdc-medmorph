@@ -6,14 +6,14 @@ Usage: #example
 * type = #message
 * link.relation = "self"
 * link.url = "http://20.84.81.240:8080/r4/fhir/Bundle"
-* entry[0].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-1
-* entry[=].fullUrl = "urn:uuid:f9436646-8f3d-47dd-a489-cdf5fbaa8cd7"
-* entry[+].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-2
-* entry[=].fullUrl = "urn:uuid:89bc6b79-6acc-4730-ab5f-38bbebb2639d"
-* entry[+].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-3
-* entry[=].fullUrl = "urn:uuid:1116c889-4c11-4a00-aef3-c9f5b317ffea"
-* entry[+].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-4
-* entry[=].fullUrl = "urn:uuid:48b46e53-a0eb-4ee2-857f-d8a190d050ce"
+* entry[0].fullUrl = "urn:uuid:07a76e52-0668-464a-a0c3-2b6ba22cebfc"
+* entry[=].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-1
+* entry[+].fullUrl = "urn:uuid:89bc6b79-6acc-4730-ab5f-38bbebb2639d"
+* entry[=].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-2
+* entry[+].fullUrl = "urn:uuid:1116c889-4c11-4a00-aef3-c9f5b317ffea"
+* entry[=].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-3
+* entry[+].fullUrl = "urn:uuid:48b46e53-a0eb-4ee2-857f-d8a190d050ce"
+* entry[=].resource = Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-4
 
 Instance: Inline-Instance-for-23af31b8-1e01-4551-a19b-772e94b6aefa-1
 InstanceOf: MessageHeader
