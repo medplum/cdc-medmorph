@@ -9,8 +9,10 @@ Usage: #inline
 * extension[=].extension[=].valueCoding = urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
 * extension[=].extension[+].url = "detailed"
 * extension[=].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-* identifier.system = "urn:MRN"
-* identifier.value = "1EKG4-TEST-RG56"
+* identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[=].value = "1234567893"
+* identifier[+].system = "urn:MRN"
+* identifier[=].value = "1EKG4-TEST-RG56"
 * name.family = "Gonzalez"
 * name.given = "Rosa"
 * gender = #female

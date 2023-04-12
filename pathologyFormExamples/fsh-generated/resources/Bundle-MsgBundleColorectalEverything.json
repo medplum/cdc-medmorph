@@ -127,6 +127,10 @@
               ],
               "identifier": [
                 {
+                  "system": "http://hl7.org/fhir/sid/us-npi",
+                  "value": "1234567893"
+                },
+                {
                   "system": "urn:MRN",
                   "value": "1EKG4-TEST-RG56"
                 }
@@ -726,6 +730,10 @@
                 }
               ],
               "identifier": [
+                {
+                  "system": "http://hl7.org/fhir/sid/us-npi",
+                  "value": "1234567893"
+                },
                 {
                   "system": "urn:MRN",
                   "value": "1EKG4-TEST-RG56"
@@ -1959,6 +1967,10 @@
                 }
               ],
               "identifier": [
+                {
+                  "system": "http://hl7.org/fhir/sid/us-npi",
+                  "value": "1234567893"
+                },
                 {
                   "system": "urn:MRN",
                   "value": "1EKG4-TEST-RG56"
